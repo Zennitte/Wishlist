@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using WishList_WebApi.Contexts;
 using WishList_WebApi.Domains;
 using WishList_WebApi.Interfaces;
@@ -19,7 +20,7 @@ namespace WishList_WebApi.Repositores
 
         public List<Desejo> ListarTodos()
         {
-            return ctx.Desejos.ToList();
+            return ctx.Desejos.Include(x => x.IdUsuarioNavigation).ToList();
         }
     }
 }

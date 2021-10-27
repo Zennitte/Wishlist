@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container{
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid{
+  width: 90%;
+}
+
+.container_titulo{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  align-items:flex-end;
+}
+
+.linha{
+  border-color: black;
+  width: 60%;
+  height: 1px;
+  margin-bottom: 5px;
+}
+
+.titulo{
+  margin: 0 10px;
+  font-family: 'Parisienne', cursive;
+  font-size: 46px;
+}
+
+.container_texto{
+  display: flex;
+  justify-content: center;
+  font-family: 'Parisienne', cursive;
+  font-size: 26px;
+}
+
+.container_exibir{
+  display: flex;
+}
+
+.container_cadastrar{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  width: 35%;
+  height: 400px;
+}
+
+.subtitulo{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container_form label{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 26px;
+  color: black;
+  margin-top: 10px;
+}
+
+.container_form input{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  color: black;
+  width: 60%;
+}
+
+.container_form button{
+  font-family: 'Titillium Web', sans-serif;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 25%;
+  height: 30px;
+  margin-top: 35px;
+}
+
+.container_lista{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 7%;
+  margin-left: 5%;
+}
+
+.tabela{
+  border: 2px solid black;
+  margin-top: 30px;
+}
+
+.tabela_th{
+  background-color: white;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  
+}
+
+.tabela_tb{
+  background-color: white;
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

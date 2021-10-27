@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\israe\\Desktop\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Documentos\\Senai\\WishClone\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\israe\\Desktop\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj": {
+    "C:\\Users\\User\\OneDrive\\Documentos\\Senai\\WishClone\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\israe\\Desktop\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documentos\\Senai\\WishClone\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj",
         "projectName": "WishList_WebApi",
-        "projectPath": "C:\\Users\\israe\\Desktop\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj",
-        "packagesPath": "C:\\Users\\israe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\israe\\Desktop\\Wishlist\\WishList_WebApi\\WishList_WebApi\\obj\\",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Documentos\\Senai\\WishClone\\Wishlist\\WishList_WebApi\\WishList_WebApi\\WishList_WebApi.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Documentos\\Senai\\WishClone\\Wishlist\\WishList_WebApi\\WishList_WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\israe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -53,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

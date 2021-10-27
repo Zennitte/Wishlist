@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,15 +19,29 @@ namespace WishList_WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddControllers();
+                .AddControllers()
+                .AddNewtonsoftJson(options =>
+                 {
+                     options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                     options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                     options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+                 });
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "senai.wishlist.webApi"
+                });
+            });
 
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
                                 builder =>
                                 {
-                                    builder.WithOrigins("http://localhost:3000/%22")
+                                    builder.WithOrigins("http://localhost:3000")
                                     .AllowAnyHeader()
                                     .AllowAnyMethod();
                                 });
@@ -41,6 +57,14 @@ namespace WishList_WebApi
             }
 
             app.UseRouting();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "senai.wishlist.webApi");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseCors("CorsPolicy");
 
