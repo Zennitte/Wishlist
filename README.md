@@ -41,6 +41,6 @@
 <h2>Desenvolvedores</h2>
 <p><img align = "center" alt = "SQL Server" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"> Matheus Martins </p>
 <p><img align = "center" alt = "Figma" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg"> Leonardo Vitor</p>
-<p><img align = "center" alt = "C#" height = "40" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-original.svg"> Israel Mota</p>
-<p><img align = "center" alt = "ReactJs" height = "40" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"> Kauê Camargo</p>
+<p><img align = "center" alt = "C#" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-original.svg"> Israel Mota</p>
+<p><img align = "center" alt = "ReactJs" height = "30" width = "40" src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"> Kauê Camargo</p>
 <h1>Obrigado por utlizar nossa aplicação</h1>
